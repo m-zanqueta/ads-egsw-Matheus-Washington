@@ -1,4 +1,4 @@
-/* CSS DO CABEÇALHO - RESTAURANTE YU */
+/* CSS DO CABEÇALHO - COMPOSTTECH MONITOR */
 
 /* Reset básico para elementos do cabeçalho */
 #header-container header, 
@@ -13,29 +13,33 @@
 
 /* Estilos do cabeçalho */
 #header-container header {
-    padding: 20px;
-    border-bottom: 1px solid #ccc;
-    background-color: #fff;
+    padding: 25px 20px;
+    border-bottom: 3px solid #4a7c59;
+    background: #ffffff;
     position: relative;
     width: 100%;
+    box-shadow: 0 2px 15px rgba(45, 80, 22, 0.08);
 }
 
 #header-container .logo {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 #header-container .logo h1 {
     font-family: Arial, sans-serif;
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    color: #2d5016;
+    letter-spacing: 0.5px;
 }
 
 #header-container .logo p {
     font-family: Arial, sans-serif;
-    font-size: 0.9rem;
-    color: #666;
+    font-size: 0.95rem;
+    color: #4a7c59;
+    font-weight: 500;
 }
 
 /* Navegação */
@@ -44,47 +48,94 @@
     justify-content: center;
     list-style: none;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 #header-container nav li {
-    margin: 0 15px;
+    margin: 0 12px;
 }
 
 #header-container nav a {
     text-decoration: none;
-    color: #333;
+    color: #2d5016;
     font-family: Arial, sans-serif;
-    font-size: 1rem;
-    padding: 5px 0;
-    transition: color 0.3s ease;
+    font-size: 1.05rem;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+    font-weight: 500;
+    border: 2px solid transparent;
 }
 
 #header-container nav a:hover {
-    color: #666;
+    color: #2d5016;
+    background-color: #e8f5e9;
+    border-color: #4a7c59;
+    transform: translateY(-2px);
 }
 
 #header-container nav a.active {
-    font-weight: bold;
-    color: #000;
-    border-bottom: 2px solid #000;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(135deg, #4a7c59 0%, #2d5016 100%);
+    border-color: #2d5016;
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.25);
 }
 
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
     #header-container header {
-        padding: 15px;
+        padding: 20px 15px;
     }
     
     #header-container .logo h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
+    }
+    
+    #header-container .logo p {
+        font-size: 0.85rem;
     }
     
     #header-container nav ul {
         flex-direction: column;
         align-items: center;
+        gap: 8px;
     }
     
     #header-container nav li {
-        margin: 5px 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
     }
+    
+    #header-container nav a {
+        display: block;
+        padding: 12px;
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+        font-size: 1rem;
+    }
+}
+
+/* Estados de foco para acessibilidade */
+#header-container nav a:focus {
+    outline: 2px solid #8bc34a;
+    outline-offset: 2px;
+}
+
+/* Transição suave para todo o header */
+#header-container header {
+    transition: all 0.3s ease;
+}
+
+/* Efeito quando a página é scrollada */
+#header-container header.scrolled {
+    padding: 15px 20px;
+    box-shadow: 0 4px 20px rgba(45, 80, 22, 0.12);
+}
+
+/* Container principal para alinhamento */
+#header-container {
+    background: #ffffff;
 }
