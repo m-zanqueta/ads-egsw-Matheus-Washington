@@ -2,10 +2,10 @@
 async function loadFooter() {
     try {
         // Carrega o CSS do footer primeiro
-        await loadCSS('estilos/footer.css');
+        await loadCSS('../estilos/footer.css');
         
         // Depois carrega o HTML do footer
-        const response = await fetch('assets/footer.html');
+        const response = await fetch('../assets/footer.html');
         if (!response.ok) {
             throw new Error('Erro ao carregar o footer');
         }

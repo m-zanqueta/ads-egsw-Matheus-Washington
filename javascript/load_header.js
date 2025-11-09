@@ -21,10 +21,10 @@ function loadCSS(href) {
 async function loadHeader() {
     try {
         // Carrega o CSS do header primeiro
-        await loadCSS('estilos/header.css');
+        await loadCSS('../estilos/header.css');
         
         // Depois carrega o HTML do header
-        const response = await fetch('assets/header.html');
+        const response = await fetch('../assets/header.html');
         if (!response.ok) {
             throw new Error('Erro ao carregar o header');
         }
