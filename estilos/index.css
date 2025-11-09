@@ -1,0 +1,80 @@
+/* CSS DO CABEÇALHO - RESTAURANTE YU */
+
+/* Reset básico para elementos do cabeçalho */
+header, nav, nav ul, nav li, nav a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do cabeçalho */
+header {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo h1 {
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.logo p {
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Navegação */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #666;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+    
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav li {
+        margin: 5px 0;
+    }
+}
