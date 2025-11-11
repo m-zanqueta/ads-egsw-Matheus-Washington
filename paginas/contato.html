@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - RAIZ</title>
+    <link rel="stylesheet" href="../estilos/contato.css">
+    <script src="../javascript/contato.js"></script>
+</head>
+
+<body>
+    
+    <div id="header-container"></div>
+    <script src="../javascript/load_header.js"></script>
+    
+
+    <!-- Seção Hero para Contato -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Entre em Contato</h1>
+            <p>Tem dúvidas sobre nossos sistemas de compostagem? Entre em contato conosco para obter mais informações sobre nossos produtos e soluções.</p>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Informações de Contato</h2>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h3>Endereço</h3>
+                            <p>Rua das Flores, 123<br>Jardim das Palmeiras<br>São Paulo - SP, 01234-567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div class="info-content">
+                            <h3>Telefone</h3>
+                            <p>(11) 4022-8922</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">✉️</div>
+                        <div class="info-content">
+                            <h3>E-mail</h3>
+                            <p>contato@curupira.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3 style="margin-bottom: 20px;">Envie uma Mensagem</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+    <script src="../javascript/load_footer.js"></script>
+</body>
+</html>
