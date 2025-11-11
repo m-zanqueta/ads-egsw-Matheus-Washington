@@ -1,0 +1,35 @@
+# .gitignore Simplificado - Projeto Curupira
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Arquivos de IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Arquivos de ambiente
+.env
+.env.local
+
+# Arquivos temporários
+*.tmp
+*.temp
+*~
+
+# Logs
+*.log
+
+# Cache
+.cache/
+
+# Backup files
+*.bak
+*.backup
+
+# Arquivos do usuário
+*.suo
+*.user
